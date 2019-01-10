@@ -9,7 +9,7 @@ In Java, this method can be confusing:
 // Returns "*******", because replaceAll expects a regex as the first argument
 ```
 
-Kotlin improves on this with two methods:
+Kotlin improves on this `replace()`, which takes a String as the first argument, and an overloaded method which takes a regex:
 ```kotlin
 "one.two".replace(".", "*")
 // Returns "one*two"
